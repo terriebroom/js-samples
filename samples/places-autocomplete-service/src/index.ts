@@ -96,7 +96,11 @@ const inputChangeCallback = debounce(100, () => {
   };
 
   const bounds = map.getBounds();
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 6d71aa86 (style: run fix)
   if (biasToMapSwitchElement.checked && bounds) {
     request.bounds = bounds;
   }
