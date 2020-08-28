@@ -15,6 +15,8 @@
  */
 // [START maps_places_autocomplete_service]
 
+type ActiveTabID = "request" | "response";
+
 let autocompleteService: google.maps.places.AutocompleteService;
 let placesService: google.maps.places.PlacesService;
 
@@ -94,7 +96,7 @@ const inputChangeCallback = debounce(100, () => {
   };
 
   const bounds = map.getBounds();
-
+  
   if (biasToMapSwitchElement.checked && bounds) {
     request.bounds = bounds;
   }
